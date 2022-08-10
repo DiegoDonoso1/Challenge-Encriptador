@@ -1,0 +1,122 @@
+/* * {
+    border: solid 2px red;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #d8dfe8;
+}
+
+h1 {
+    margin: 20px;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+}
+
+.caja-encriptar {
+    display: inline-block;
+    position: absolute;
+    width: 60%;
+    left: 160px;
+    height: 90%;
+    margin-left: 80px;
+}
+.caja-encriptar form {
+    width: 100%;
+    height: 80%;
+    text-align: left;
+}
+
+.caja-encriptar textarea {
+    background: #d8dfe8;
+    color: #0a3871;
+    padding: 12px 20px;
+    width: 90%;
+    height: 80%;
+    border: 0;
+    font-size: 25px;
+    resize: none;
+    outline: none;
+}
+
+.caja-encriptar textarea::placeholder {
+    color: #0a3871;
+}
+
+.caja-resultado {
+    background-color: #ffffff;
+    position: absolute;
+    padding: 20px;
+    right: 80px;
+    top: 0;
+    text-align: center;
+    border-radius: 20px;
+    height: 90%;
+    width: 20%;
+
+    /* box-sizing: border-box; */
+}
+
+.imagen-resultado {
+    object-fit: cover;
+}
+
+.caja-resultado h2 {
+    font-size: 30px;
+    color: #343a40;
+}
+
+.caja-resultado p {
+    padding: 20px;
+    color: #495057;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    word-break: break-all;
+    overflow-y: hidden;
+    border: 0;
+    height: 60%;
+}
+
+.caja-resultado button {
+    width: 250px;
+    padding: 18px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 15px;
+    background: #ffffff;
+    color: #0a3871;
+    border: solid 1px #0a3871;
+    margin-top: 80px;
+    visibility: hidden;
+}
+
+.caja-botones p {
+    color: #495057;
+}
+
+.caja-botones button {
+    width: 250px;
+    padding: 18px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.encriptar {
+    background: #0a3871;
+    color: #ffffff;
+    border: solid 1px #0a3871;
+}
+
+.desencriptar {
+    background: #d8dfe8;
+    color: #0a3871;
+    border: solid 1px #0a3871;
+}

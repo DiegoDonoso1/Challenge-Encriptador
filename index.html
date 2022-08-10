@@ -5,14 +5,61 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Encriptador</title>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <label for="">Ingresa tu mensaje para encriptar</label>
-        <input type="text" id="encriptar" />
+        <header>
+            <h1><img src="imagenes/Logo.png" alt="logo-alura-Challenge" /></h1>
+        </header>
 
-        <button type="submit" onclick="capturarPalaba()">encriptar</button>
-        <p id="texto-encriptado">resultado</p>
-        <button type="submit" onclick="desencriptar()">desencriptar</button>
+        <main>
+            <div class="caja-encriptar">
+                <form id="form">
+                    <textarea
+                        placeholder="Ingrese el texto aqui"
+                        id="encriptar"
+                    ></textarea>
+                </form>
+
+                <div class="caja-botones">
+                    <p class="reglas">Solo letras minusculas y mayusculas</p>
+                    <button
+                        class="encriptar"
+                        type="submit"
+                        onclick="capturarPalaba()"
+                    >
+                        Encriptar
+                    </button>
+                    <button
+                        class="desencriptar"
+                        type="submit"
+                        onclick="desencriptar()"
+                    >
+                        Desencriptar
+                    </button>
+                </div>
+            </div>
+
+            <div class="caja-resultado">
+                <img
+                    class="imagen-resultado"
+                    id="imagen-resultado"
+                    src="imagenes/Muñeco.png"
+                    alt=""
+                />
+                <h2 id="titulo-resultado">
+                    Ningún mensaje fue <br />
+                    encontrado
+                </h2>
+                <p id="texto-encriptado">
+                    Ingresa el texto que desees encriptar <br />
+                    o desencriptar.
+                </p>
+
+                <button id="botoncopiar" onclick="copiar()">Copiar</button>
+            </div>
+        </main>
+
         <script src="script.js"></script>
     </body>
 </html>
