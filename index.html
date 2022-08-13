@@ -18,15 +18,21 @@
                     <textarea
                         placeholder="Ingrese el texto aqui"
                         id="encriptar"
+                        onkeypress="return (event.charCode == 32 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"
                     ></textarea>
                 </form>
 
                 <div class="caja-botones">
-                    <p class="reglas">Solo letras minusculas y mayusculas</p>
+                    <p class="reglas">
+                        <img
+                            src="imagenes/exclamation-circle-filled.svg"
+                            alt=""
+                        />Solo letras minusculas y mayusculas
+                    </p>
                     <button
                         class="encriptar"
                         type="submit"
-                        onclick="capturarPalaba()"
+                        onclick="encriptar()"
                     >
                         Encriptar
                     </button>
@@ -55,7 +61,6 @@
                     Ingresa el texto que desees encriptar <br />
                     o desencriptar.
                 </p>
-
                 <button id="botoncopiar" onclick="copiar()">Copiar</button>
             </div>
         </main>

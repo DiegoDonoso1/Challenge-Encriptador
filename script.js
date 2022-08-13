@@ -1,10 +1,11 @@
-function capturarPalaba() {
+function encriptar() {
     let palabra = document.getElementById('encriptar').value;
     let parrafo = document.getElementById('texto-encriptado');
     let titulo = document.getElementById('titulo-resultado');
     let imagen = document.getElementById('imagen-resultado');
     let boton = document.getElementById('botoncopiar');
     document.getElementById('form').reset();
+    parrafo.className = 'altura';
     boton.style.visibility = 'visible';
     titulo.style.display = 'none';
     imagen.style.display = 'none';
@@ -26,7 +27,15 @@ function capturarPalaba() {
 function desencriptar() {
     let palabra = document.getElementById('encriptar').value;
     let parrafo = document.getElementById('texto-encriptado');
+    let titulo = document.getElementById('titulo-resultado');
+    let imagen = document.getElementById('imagen-resultado');
+    let boton = document.getElementById('botoncopiar');
+
     document.getElementById('form').reset();
+    parrafo.className = 'altura';
+    boton.style.visibility = 'visible';
+    titulo.style.display = 'none';
+    imagen.style.display = 'none';
 
     let palabraObj = {
         ai: 'a',

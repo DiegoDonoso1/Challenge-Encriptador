@@ -1,11 +1,12 @@
-/* * {
-    border: solid 2px red;
-} */
+* {
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
 
 body {
     margin: 0;
     padding: 0;
-    background: #d8dfe8;
+    background: #f3f5fc;
 }
 
 h1 {
@@ -34,7 +35,7 @@ main {
 }
 
 .caja-encriptar textarea {
-    background: #d8dfe8;
+    background: #f3f5fc;
     color: #0a3871;
     padding: 12px 20px;
     width: 90%;
@@ -47,6 +48,7 @@ main {
 
 .caja-encriptar textarea::placeholder {
     color: #0a3871;
+    opacity: 1;
 }
 
 .caja-resultado {
@@ -59,37 +61,36 @@ main {
     border-radius: 20px;
     height: 90%;
     width: 20%;
-
-    /* box-sizing: border-box; */
 }
 
 .imagen-resultado {
-    object-fit: cover;
+    width: 100%;
+    object-fit: contain;
 }
 
 .caja-resultado h2 {
     font-size: 30px;
     color: #343a40;
+    word-break: break-word;
 }
 
 .caja-resultado p {
-    padding: 20px;
     color: #495057;
     font-size: 20px;
-    box-sizing: border-box;
     width: 100%;
     word-break: break-all;
     overflow-y: hidden;
-    border: 0;
+}
+
+.altura {
     height: 60%;
 }
 
 .caja-resultado button {
-    width: 250px;
+    width: 80%;
     padding: 18px;
     font-size: 20px;
-    border-radius: 10px;
-    margin: 15px;
+    border-radius: 20px;
     background: #ffffff;
     color: #0a3871;
     border: solid 1px #0a3871;
@@ -97,15 +98,16 @@ main {
     visibility: hidden;
 }
 
-.caja-botones p {
+.reglas {
     color: #495057;
+    margin-left: 10px;
 }
 
 .caja-botones button {
     width: 250px;
     padding: 18px;
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 15px;
 }
 
@@ -119,4 +121,87 @@ main {
     background: #d8dfe8;
     color: #0a3871;
     border: solid 1px #0a3871;
+}
+
+@media (max-width: 1440px) {
+    .caja-encriptar {
+        width: 50%;
+        margin-left: 0;
+    }
+
+    .caja-resultado {
+        width: 25%;
+    }
+}
+
+@media (max-width: 810px) {
+    main {
+        height: auto;
+        text-align: center;
+    }
+
+    .caja-encriptar {
+        position: static;
+        display: block;
+        padding: 20px;
+        width: auto;
+        margin: auto;
+    }
+
+    .caja-encriptar form {
+        height: 400px;
+    }
+
+    .caja-botones button {
+        width: 40%;
+    }
+
+    .reglas {
+        text-align: left;
+        padding-left: 40px;
+    }
+
+    .caja-resultado {
+        position: static;
+        display: inline-block;
+        width: 90%;
+        height: auto;
+        min-height: 200px;
+    }
+
+    .altura {
+        padding: 20px;
+    }
+
+    .caja-resultado button {
+        margin: auto;
+    }
+
+    .imagen-resultado {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .reglas {
+        padding-left: 0;
+    }
+    .caja-botones button {
+        width: 100%;
+        padding: 18px 0;
+        margin: 15px 0;
+    }
+
+    .caja-resultado {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .caja-resultado h2 {
+        font-size: 25px;
+    }
+
+    .caja-resultado p {
+        font-size: 16px;
+    }
 }
