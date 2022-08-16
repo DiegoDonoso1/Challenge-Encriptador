@@ -35,3 +35,13 @@ gaitober" => "gato"
 ## Extras
 
 - Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
+
+## Diseño final 
+### Escritorio
+![Desktop](/imagenes/desktop.png)
+
+### Ipad
+![Desktop](/imagenes/ipad..png)
+
+### Movil
+![Desktop](/imagenes/movil.png)
