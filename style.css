@@ -123,6 +123,12 @@ main {
     border: solid 1px #0a3871;
 }
 
+footer {
+    text-align: center;
+    font-size: 18px;
+    color: #495057;
+}
+
 @media (max-width: 1440px) {
     .caja-encriptar {
         width: 50%;
@@ -179,6 +185,11 @@ main {
 
     .imagen-resultado {
         display: none;
+    }
+
+    footer {
+        margin-top: 20px;
+        padding: 10px;
     }
 }
 
